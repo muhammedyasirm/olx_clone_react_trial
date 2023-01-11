@@ -2,8 +2,12 @@
   padding: 10px;
   background-color: whitesmoke;
   position: fixed;
-  width: 100vw;
+  width: 100%;
   z-index: 999;
+}
+
+.brandName {
+  cursor: pointer;
 }
 
 .headerChildDiv {
@@ -112,7 +116,7 @@
   height: 2px;
 }
 
-.loginPage a{
+.loginPage a {
   text-decoration: none;
 }
 
@@ -161,4 +165,47 @@
   .sellMenu {
     display: none;
   }
+}
+
+/* dropdown */
+.dropbtn {
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content span {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content span:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.cur {
+  cursor: pointer;
 }

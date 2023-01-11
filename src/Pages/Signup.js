@@ -1,11 +1,13 @@
 import React from 'react';
-
 import Signup from '../Components/Signup/Signup';
+import { Loading } from '../Store/Context';
 
 function SignupPage() {
   return (
     <div>
-      <Signup />
+      <Loading>
+        <Signup />
+      </Loading>
     </div>
   );
 }

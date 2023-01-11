@@ -1,10 +1,13 @@
 import React from 'react';
 import Login from '../Components/Login/Login';
+import { Loading } from '../Store/Context';
 
 function LoginPage() {
   return (
     <div>
-      <Login />
+      <Loading>
+        <Login />
+      </Loading>
     </div>
   );
 }
